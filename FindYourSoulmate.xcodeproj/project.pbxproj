@@ -56,15 +56,55 @@
 		CEC0C4E6270781B300E60E39 /* FindYourSoulmate */ = {
 			isa = PBXGroup;
 			children = (
-				CEC0C4E7270781B300E60E39 /* AppDelegate.swift */,
-				CEC0C4E9270781B300E60E39 /* SceneDelegate.swift */,
-				CEC0C4EB270781B300E60E39 /* ViewController.swift */,
+				CEC0C4FF27086A1100E60E39 /* Extensions */,
+				CEC0C4FD270869C700E60E39 /* Models */,
+				CEC0C4FE270869E800E60E39 /* Views */,
+				CEC0C4FC270869AA00E60E39 /* ViewControllers */,
 				CEC0C4ED270781B300E60E39 /* Main.storyboard */,
-				CEC0C4F0270781BB00E60E39 /* Assets.xcassets */,
 				CEC0C4F2270781BB00E60E39 /* LaunchScreen.storyboard */,
-				CEC0C4F5270781BB00E60E39 /* Info.plist */,
+				CEC0C4FB2708696100E60E39 /* SupportFiles */,
+				CEC0C4F0270781BB00E60E39 /* Assets.xcassets */,
 			);
 			path = FindYourSoulmate;
+			sourceTree = "<group>";
+		};
+		CEC0C4FB2708696100E60E39 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0C4E7270781B300E60E39 /* AppDelegate.swift */,
+				CEC0C4E9270781B300E60E39 /* SceneDelegate.swift */,
+				CEC0C4F5270781BB00E60E39 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CEC0C4FC270869AA00E60E39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0C4EB270781B300E60E39 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEC0C4FD270869C700E60E39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEC0C4FE270869E800E60E39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEC0C4FF27086A1100E60E39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25ZP9J625N;
-				INFOPLIST_FILE = FindYourSoulmate/Info.plist;
+				INFOPLIST_FILE = FindYourSoulmate/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25ZP9J625N;
-				INFOPLIST_FILE = FindYourSoulmate/Info.plist;
+				INFOPLIST_FILE = FindYourSoulmate/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
