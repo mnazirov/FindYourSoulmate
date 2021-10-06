@@ -10,41 +10,26 @@ import UIKit
 class ViewController: UIViewController {
     
     let photoView = UIView()
-    let feedbackView = UIView()
+    
+    let topNavigationStackView = TopNavigationStackView()
+    let feedbackStackView = FeedbackStackView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        
         setLayout()
     }
     
     private func setLayout() {
-        // Set up Menu
-        let elementsMenuView = [UIColor.systemGray, UIColor.systemGray2, UIColor.systemGray3].map { color -> UIView in
-            let itemView = UIView()
-            itemView.backgroundColor = color
-            return itemView
-        }
+        let mainStackView = UIStackView(arrangedSubviews: [topNavigationStackView, photoView, feedbackStackView])
+        mainStackView.axis = .vertical
+        view.addSubview(mainStackView)
         
-        let menuStackView = UIStackView(arrangedSubviews: elementsMenuView)
-        menuStackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        menuStackView.distribution = .fillEqually
-        
-        // Set up the photo block
-        photoView.backgroundColor = .systemTeal
-        
-        // Set up block of user ratings
-        feedbackView.backgroundColor = .white
-        feedbackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        
-        
-        // Set up Stack View
-        let stackView = UIStackView(arrangedSubviews: [menuStackView, photoView, feedbackView])
-        stackView.axis = .vertical
-        view.addSubview(stackView)
-        
-        stackView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
-                         leading: view.safeAreaLayoutGuide.leadingAnchor,
-                         trailing: view.safeAreaLayoutGuide.trailingAnchor,
+        mainStackView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                         leading: view.leadingAnchor,
+                         trailing: view.trailingAnchor,
                          bottom: view.safeAreaLayoutGuide.bottomAnchor)
     }
     
